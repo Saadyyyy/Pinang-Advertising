@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-br from-blue-50 to-white pt-0 pb-12 sm:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}

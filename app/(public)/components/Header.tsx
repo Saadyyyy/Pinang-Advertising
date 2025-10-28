@@ -8,10 +8,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Layanan', href: '#layanan' },
-    { name: 'Portofolio', href: '#portofolio' },
-    { name: 'Harga', href: '#harga' },
-    { name: 'Proses Kerja', href: '#proses-kerja' },
+    { name: 'Layanan', href: '/layanan' },
+    { name: 'Portofolio', href: '/portofolio' },
+    { name: 'Harga', href: '/harga' },
+    { name: 'Proses Kerja', href: '/proses-kerja' },
   ];
 
   return (
