@@ -21,14 +21,14 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Warna Akurat Card */}
           <div className="group bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-white hover:shadow-2xl transition-all duration-500 relative overflow-hidden min-h-[240px] sm:min-h-[280px] hover:transform hover:scale-105">
-            <div className="relative h-full z-10">
+            <div className="relative h-full z-10 pr-16 sm:pr-32">
               <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full"></div>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold">Warna Akurat</h3>
               </div>
-              <p className="text-blue-100 text-sm sm:text-base leading-relaxed pr-4 sm:pr-8 mb-4 sm:mb-6">
+              <p className="text-blue-100 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">
                 Workflow terkelola warna dari file hingga mesin, disertai color proof sebelum cetak massal. Hasil konsisten di setiap batch dan media.
               </p>
               <div className="flex items-center gap-2 text-white/80">
@@ -38,13 +38,13 @@ export default function WhyChooseUs() {
                 <span className="text-xs sm:text-sm font-medium">Color Management System</span>
               </div>
             </div>
-            <div className="absolute right-4 top-4 sm:right-6 sm:top-6 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-4 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
               <Image
                 src="/warna-akurat.png"
                 alt="Warna Akurat"
-                width={100}
-                height={100}
-                className="sm:w-[140px] sm:h-[140px] object-contain drop-shadow-lg"
+                width={120}
+                height={120}
+                className="w-20 h-20 sm:w-28 sm:h-28 object-contain drop-shadow-lg"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -52,14 +52,14 @@ export default function WhyChooseUs() {
 
           {/* Cepat & Tepat Card */}
           <div className="group bg-gradient-to-br from-green-600 to-green-700 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-white hover:shadow-2xl transition-all duration-500 relative overflow-hidden min-h-[240px] sm:min-h-[280px] hover:transform hover:scale-105">
-            <div className="relative h-full z-10">
+            <div className="relative h-full z-10 pr-16 sm:pr-32">
               <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 <div className="w-6 h-6 sm:w-8 sm:h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
                   <div className="w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-full"></div>
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold">Cepat & Tepat</h3>
               </div>
-              <p className="text-green-100 text-sm sm:text-base leading-relaxed pr-4 sm:pr-8 mb-4 sm:mb-6">
+              <p className="text-green-100 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6">
                 Same-day print untuk A3+, lead time jelas untuk proyek besar. Sistem produksi yang efisien untuk memenuhi deadline ketat Anda.
               </p>
               <div className="flex items-center gap-2 text-white/80">
@@ -69,13 +69,13 @@ export default function WhyChooseUs() {
                 <span className="text-xs sm:text-sm font-medium">Express Service Available</span>
               </div>
             </div>
-            <div className="absolute right-4 top-4 sm:right-6 sm:top-6 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-4 opacity-90 group-hover:opacity-100 transition-opacity duration-300">
               <Image
                 src="/cepat-tepat.png"
                 alt="Cepat & Tepat"
-                width={100}
-                height={100}
-                className="sm:w-[140px] sm:h-[140px] object-contain drop-shadow-lg"
+                width={120}
+                height={120}
+                className="w-20 h-20 sm:w-28 sm:h-28 object-contain drop-shadow-lg"
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
