@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/Card';
-import CategoryModal from '../../../components/ui/CategoryModal';
+import CategoryModal from '@/components/ui/CategoryModal';
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 
 interface Category {
