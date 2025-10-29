@@ -148,8 +148,8 @@ export async function DELETE(
       );
     }
 
-    // Check if category is being used in portfolio
-    const usageQuery = `SELECT COUNT(*) as count FROM portfolio WHERE category_id = $1`;
+    // Check if category is being used in portfolio (exclude soft-deleted items)
+    const usageQuery = `SELECT COUNT(*) as count FROM portfolio WHERE category_id = $1 AND deleted_at IS NULL`;
     const usageResult = await db.query(usageQuery, [id]);
 
     if (parseInt(usageResult.rows[0].count) > 0) {
