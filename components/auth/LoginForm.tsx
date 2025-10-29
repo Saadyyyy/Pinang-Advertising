@@ -226,20 +226,6 @@ export default function LoginForm() {
                 )}
               </button>
             </form>
-
-            <div className="mt-8 pt-6 border-t border-white/10">
-              <div className="text-center">
-                <p className="text-sm text-white/70 mb-3 font-medium">
-                  🔐 Demo Credentials:
-                </p>
-                <div className="space-y-1 text-xs text-white/60 bg-white/5 backdrop-blur-xl rounded-xl p-4 border border-white/10">
-                  <div><strong className="text-white/80">Super Admin:</strong> admin123@example.com</div>
-                  <div><strong className="text-white/80">Admin:</strong> admin@example.com</div>
-                  <div><strong className="text-white/80">User:</strong> user@example.com</div>
-                  <div className="text-orange-400 font-medium mt-2">Password: secret123</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -247,9 +233,6 @@ export default function LoginForm() {
         <div className="text-center mt-6 sm:mt-8">
           <p className="text-xs sm:text-sm text-gray-500">
             © 2024 Pinang Advertising. All rights reserved.
-          </p>
-          <p className="text-xs text-gray-400 mt-1">
-            Neon Box • Huruf Timbul • Signage • Branding
           </p>
         </div>
       </div>
