@@ -25,8 +25,9 @@ export interface ApiResponse<T> {
   message?: string;
 }
 
-// Base URL for API - using internal Next.js API routes
-const API_BASE_URL =  'http://localhost:3000';
+// Base URL untuk API: gunakan env NEXT_PUBLIC_API_BASE_URL jika ada,
+// fallback ke path relatif agar mengikuti origin saat dev/prod
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || '';
 
 /**
  * Fetch all categories from API

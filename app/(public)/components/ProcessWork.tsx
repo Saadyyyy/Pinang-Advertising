@@ -69,7 +69,7 @@ const ProcessWork = () => {
         {/* Process Steps - Mobile: Vertical, Desktop: Horizontal */}
         <div className="flex justify-center items-center mb-12 sm:mb-16 w-full">
           {/* Mobile Layout - Vertical Steps */}
-          <div className="block lg:hidden space-y-6 w-full max-w-2xl mx-auto flex flex-col items-center justify-center">
+          <div className="lg:hidden w-full max-w-2xl mx-auto flex flex-col items-center justify-center space-y-6">
             {steps.map((step, index) => (
               <div key={step.id} className="relative flex justify-center items-center w-full">
                 <div className="w-full max-w-lg mx-auto flex justify-center items-center">
@@ -127,11 +127,10 @@ const ProcessWork = () => {
 
           {/* Desktop Layout - Horizontal Steps */}
           <div className="hidden lg:flex lg:flex-col lg:items-center lg:justify-center w-full">
-            <div className="flex items-center justify-center mb-12 w-full">
-              <div className="flex items-center justify-center max-w-5xl w-full mx-auto">
-                <div className="flex items-center justify-center w-full max-w-4xl mx-auto">
-                  {steps.map((step, index) => (
-                    <div key={step.id} className="flex items-center justify-center flex-1">
+            <div className="mb-12 w-full">
+              <div className="mx-auto w-full max-w-3xl flex items-center justify-center">
+                {steps.map((step, index) => (
+                    <div key={step.id} className="flex items-center justify-center">
                       <div 
                         className={`relative cursor-pointer transition-all duration-300 mx-auto flex flex-col items-center justify-center ${
                           activeStep === step.id ? 'transform scale-105' : ''
@@ -159,11 +158,10 @@ const ProcessWork = () => {
                       
                       {/* Connector Line */}
                       {index < steps.length - 1 && (
-                        <div className="flex-1 h-1 mx-8 bg-gradient-to-r from-blue-200 to-blue-100 rounded-full flex items-center justify-center"></div>
+                        <div className="h-1 w-32 lg:w-40 xl:w-48 mx-8 bg-gradient-to-r from-blue-200 to-blue-100 rounded-full"></div>
                       )}
                     </div>
-                  ))}
-                </div>
+                ))}
               </div>
             </div>
 
